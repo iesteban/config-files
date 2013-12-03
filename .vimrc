@@ -36,3 +36,4 @@ nmap <C-c> :.w! ~/.vimbuffer<CR>
 map <C-p> :r ~/.vimbuffer<CR>
 
 
+set nowrap

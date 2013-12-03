@@ -9,8 +9,8 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/hakka/.zshrc'
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit compinit
+setopt auto_cd
 # End of lines added by compinstall
 
 #PROMPT='%h %m@:%~%# '
@@ -20,3 +20,12 @@ autoload -U colors && colors
 
 PROMPT="tty%l %{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m:%{$fg_no_bold[yellow]%}%~%{$reset_color%}%# "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+
+
+alias ls="ls --color"
+
+
+bindkey "^[[A" history-search-backward
+
+bindkey "^[[B" history-search-forward
+bindkey -e
