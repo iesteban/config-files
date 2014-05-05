@@ -35,5 +35,5 @@ nmap <C-c> :.w! ~/.vimbuffer<CR>
 " paste from buffer
 map <C-p> :r ~/.vimbuffer<CR>
 
+call pathogen#infect() 
 
-set nowrap
