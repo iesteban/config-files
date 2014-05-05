@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/hiperion/branches/becash/becash'
+let g:netrw_dirhist_2='/home/hiperion/branches/becash/becash/fileupload/static/js'
+let g:netrw_dirhist_3='/home/hiperion/branches/becash/becash/templates'
+let g:netrw_dirhist_4='/home/hiperion/branches/becash/becash/templates/plain'
+let g:netrw_dirhist_5='/home/hiperion/branches/becash/becash/templates/plain/becash'
+let g:netrw_dirhist_6='/home/hiperion/.vim'
+let g:netrw_dirhist_7='/home/hiperion'
