@@ -23,7 +23,8 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 
 alias ls="ls --color"
-
+alias ssh="ssh -A"
+alias fuck='sudo $(history -p \!\!)' 
 
 bindkey "^[[A" history-search-backward
 
