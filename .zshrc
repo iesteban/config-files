@@ -25,6 +25,7 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 alias ls="ls --color"
 alias ssh="ssh -A"
 alias fuck='sudo $(history -p \!\!)' 
+alias tunel='ssh -N -L localhost:3333:celery1:5555 root@admin1'
 
 bindkey "^[[A" history-search-backward
 
