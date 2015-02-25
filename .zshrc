@@ -26,6 +26,9 @@ alias ls="ls --color"
 alias ssh="ssh -A"
 alias fuck='sudo $(history -p \!\!)' 
 alias tunel='ssh -N -L localhost:3333:celery1:5555 root@admin1'
+alias tunel_sql='ssh -N -L localhost:33333:db52.cngx5leiezpa.eu-west-1.rds.amazonaws.com:5432 root@admin1'
+alias tunel_rabbit='ssh -N -L localhost:3334:rabbitmq1:15672 root@admin1'
+alias tags='ctags -R .'
 
 bindkey "^[[A" history-search-backward
 
