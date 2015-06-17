@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/ismael/branches/kurzweil/kurzweil'
-let g:netrw_dirhist_2='/home/ismael/branches/apitest2'
-let g:netrw_dirhist_3='/home/ismael/branches/becash/becash/universities'
-let g:netrw_dirhist_4='/home/ismael/branches/fever4/fever/templates/admin'
-let g:netrw_dirhist_5='/home/ismael/branches/fever2/fever/apps/api/serializers'
-let g:netrw_dirhist_6='/home/ismael/branches/fever2/fever/apps/tasks/tests'
-let g:netrw_dirhist_7='/home/ismael/branches/fever2/fever/apps/tasks/management/commands'
-let g:netrw_dirhist_8='/home/ismael/branches/fever2/fever/apps/tasks/tests'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/ismael/branches/fever2/fever/apps'
