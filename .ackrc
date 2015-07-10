@@ -1,2 +1,5 @@
 -i
 --ignore-dir=migrations
+--ignore-dir=south_migrations
+--ignore-dir=coverage
+--ignore-file=match:tags
