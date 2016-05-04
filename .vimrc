@@ -9,32 +9,33 @@
     """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " Custom Bundles""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     filetype off " Bundle conf
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-    Bundle 'gmarik/vundle'
-
-    Bundle 'Lokaltog/vim-easymotion'
-    " Bundle 'Shougo/neocomplete.vim'
-    " Bundle 'akracun/vitality.vim'
-    Bundle 'burnettk/vim-angular'
-    Bundle 'chase/vim-ansible-yaml'
-    " Bundle 'davidhalter/jedi-vim'
-    Bundle 'fatih/vim-go'
-    Bundle 'joeytwiddle/vim-multiple-cursors'
-    Bundle 'mattn/emmet-vim'
-
-    Bundle 'majutsushi/tagbar'
-    map <leader>m :TagbarToggle<CR>
-
-    " Bundle 'moll/vim-bbye'
-    Bundle 'rking/ag.vim'
-    Bundle 'sheerun/vim-polyglot'
-    Bundle 'tomtom/tcomment_vim'
-    Bundle 'tpope/vim-fugitive'
-    Bundle 'tpope/vim-repeat'
-    Bundle 'tpope/vim-unimpaired'
-
-    Bundle 'bling/vim-airline'
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'VundleVim/Vundle.vim'
+    "    Bundle 'gmarik/vundle'
+    "
+        Bundle 'Lokaltog/vim-easymotion'
+        " Bundle 'Shougo/neocomplete.vim'
+        " Bundle 'akracun/vitality.vim'
+        Bundle 'burnettk/vim-angular'
+        Bundle 'chase/vim-ansible-yaml'
+        " Bundle 'davidhalter/jedi-vim'
+        Bundle 'fatih/vim-go'
+        Bundle 'joeytwiddle/vim-multiple-cursors'
+        Bundle 'mattn/emmet-vim'
+    
+        Bundle 'majutsushi/tagbar'
+        map <leader>m :TagbarToggle<CR>
+    
+        " Bundle 'moll/vim-bbye'
+        Bundle 'rking/ag.vim'
+        Bundle 'sheerun/vim-polyglot'
+        Bundle 'tomtom/tcomment_vim'
+        Bundle 'tpope/vim-fugitive'
+        Bundle 'tpope/vim-repeat'
+        Bundle 'tpope/vim-unimpaired'
+    
+        Bundle 'bling/vim-airline'
     let g:airline#extensions#tabline#enabled = 1
     let g:airline_powerline_fonts=1
     let g:airline#extensions#tabline#left_sep = ''
@@ -73,8 +74,8 @@
     Bundle 'Shougo/vimfiler.vim'
     let g:vimfiler_as_defaut_explorer = 1
 
-    call vimfiler#custom#profile('default', 'context', { 'safe' : 0 })
-    map - :VimFiler<cr>
+"    call vimfiler#custom#profile('default', 'context', { 'safe' : 0 })
+"    map - :VimFiler<cr>
 
 
     filetype plugin indent on         " EOF Bundle conf
@@ -99,8 +100,8 @@
     " set mouse=a                       " Mouse Configuration
     " set mousefocus
 
-    colorscheme Tomorrow-Night-Eighties
-    set colorcolumn=119
+        colorscheme Tomorrow-Night-Eighties
+        set colorcolumn=119
     " set colorcolumn=79
     match ErrorMsg '\%<131v.\%>130v'
 
