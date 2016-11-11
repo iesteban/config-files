@@ -1,3 +1,5 @@
 --python-kinds=-i
+--exclude=node_modules
+--exclude=.git
+--exclude=assets/bundles
 optional: --exclude=*/build/*
-
