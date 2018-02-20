@@ -197,3 +197,5 @@ lg = !"git lg1"
 
 [remote "semillas"]
     url="git@github.com:Semillas/semillas_platform.git"
+[remote "alternative_currency_client"]
+    url="git@github.com:Semillas/AlternativeCurrencyApp.git"
