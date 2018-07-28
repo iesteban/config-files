@@ -40,8 +40,7 @@ set autoread
 "set wrap
 set colorcolumn=120
 
-
-
+:colorscheme torte 
 
 "" Libraries
 call plug#begin()
@@ -134,6 +133,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
 let g:syntastic_javascript_checkers = ['standard']
-let g:syntastic_javascript_standard_exec = "/home/ismael/branches/AlternativeCurrencyApp/node_modules/standard/bin/cmd.js"
 
-let g:syntastic_javascript_standard_exec = "./node_modules/standard/bin/cmd.js"
+let g:syntastic_javascript_standard_exec = "../node_modules/standard/bin/cmd.js"
