@@ -53,6 +53,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
 Plug 'vim-syntastic/syntastic'
 Plug 'bling/vim-airline'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
 call plug#end()
 :
 
@@ -135,3 +137,6 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['standard']
 
 let g:syntastic_javascript_standard_exec = "../node_modules/standard/bin/cmd.js"
+
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
