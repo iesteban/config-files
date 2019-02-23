@@ -1,11 +1,9 @@
 """ #tabs
 " - Two spaces wide
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 " - Expand them all
-set expandtab
-" - Indent by 2 spaces by default
-set shiftwidth=2
+set shiftwidth=4
 " turn off mouse
 set mouse=""
 """ Leader #leader
@@ -40,7 +38,6 @@ set autoread
 "set wrap
 set colorcolumn=120
 
-:colorscheme torte 
 
 "" Libraries
 call plug#begin()
@@ -50,13 +47,14 @@ Plug 'pangloss/vim-javascript'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'majutsushi/tagbar'
 Plug 'vim-syntastic/syntastic'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 call plug#end()
 :
+
 
 autocmd BufWritePre *.py Neoformat
 """To have Neformat executing Prettier every time we save our file, let's do that:
@@ -71,6 +69,9 @@ let g:neoformat_enabled_python = ['autopep8']
 
 
 
+
+let g:airline_theme='luna'
+:colorscheme bubblegum 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP Tags
@@ -96,12 +97,6 @@ let g:neoformat_enabled_python = ['autopep8']
 :nmap <Leader>gr :Gread<CR>
 :nmap <Leader>gs :Gstatus<CR>
 :nmap <Leader>gb :Gblame<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TAGBAR
-" <leader> tb
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:nnoremap <Leader>tb :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Create a buffer to copy/paste from/to different vim sessions

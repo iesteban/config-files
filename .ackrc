@@ -10,4 +10,5 @@
 --ignore-dir=collected
 --ignore-dir=node_modules
 --ignore-dir=android/app/build
+--ignore-dir=.webpack
 
