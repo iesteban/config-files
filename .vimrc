@@ -275,3 +275,5 @@
 endfunction
 map <leader>n :call RenameFile()<cr>
 
+execute pathogen#infect()
+call pathogen#helptags()

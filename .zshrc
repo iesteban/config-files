@@ -94,3 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH=$PATH:~/opt/node-v10.15.1-linux-x64/bin
+
+alias vim='nvim -p'
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ismael/opt/node-v10.15.1-linux-x64/bin:/home/ismael/opt/node-v10.15.1-linux-x64/bin:/home/ismael/.vimpkg/bin"

@@ -70,8 +70,8 @@ let g:neoformat_enabled_python = ['autopep8']
 
 
 
-let g:airline_theme='luna'
-:colorscheme bubblegum 
+"let g:airline_theme='luna'
+":colorscheme bubblegum 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP Tags
