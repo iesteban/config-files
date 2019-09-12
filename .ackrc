@@ -11,4 +11,5 @@
 --ignore-dir=node_modules
 --ignore-dir=android/app/build
 --ignore-dir=.webpack
-
+--ignore-dir=.mypy_cache
+--ignore-dir=__pycache__

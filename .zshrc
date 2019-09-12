@@ -63,6 +63,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,4 +101,3 @@ export PATH=$PATH:~/opt/node-v10.15.1-linux-x64/bin
 alias vim='nvim -p'
 alias tags="ctags -R --extra=f ."
 
-PATH=$PATH:~/opt/node/bin

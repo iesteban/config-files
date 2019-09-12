@@ -52,6 +52,7 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
+Plug 'zxqfl/tabnine-vim'
 call plug#end()
 :
 
