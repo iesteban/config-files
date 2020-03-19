@@ -7,9 +7,11 @@
 --ignore-file=match:tags
 --ignore-file=match:coverage
 --ignore-file=match:nosetests.xml
+--ignore-file=match:.svg
 --ignore-dir=collected
 --ignore-dir=node_modules
 --ignore-dir=android/app/build
 --ignore-dir=.webpack
 --ignore-dir=.mypy_cache
 --ignore-dir=__pycache__
+--ignore-dir=.pytest_cache
