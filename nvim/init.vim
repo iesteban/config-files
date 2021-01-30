@@ -10,7 +10,7 @@ set mouse=""
 let g:mapleader='\\'
 "" Format Options #format-options
 set formatoptions=tcrq
-set textwidth=80
+" set textwidth=80
 
 """ Show numbers in the left
 
@@ -53,6 +53,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'zxqfl/tabnine-vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'dense-analysis/ale'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 :
 
@@ -66,7 +69,8 @@ augroup fmt
   autocmd BufWritePre *.js,*.jsx Neoformat prettier
 augroup END
 
-let g:neoformat_enabled_python = ['autopep8']
+let g:neoformat_enabled_python = ['isort', 'black']
+let g:neoformat_enabled_html = ['js-beautify']
 
 
 
@@ -124,16 +128,16 @@ set tags=./tags,tags;
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_python_checkers = ['pylint3']
+let g:syntastic_python_checkers = ['pep8']
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
-
-let g:syntastic_javascript_checkers = ['standard']
-
-let g:syntastic_javascript_standard_exec = "../node_modules/standard/bin/cmd.js"
+" 
+" let g:syntastic_javascript_checkers = ['standard']
+" 
+" let g:syntastic_javascript_standard_exec = "../node_modules/standard/bin/cmd.js"
 
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
